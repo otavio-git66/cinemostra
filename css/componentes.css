@@ -59,3 +59,45 @@ nav a {
     font-size: 1.1rem;
     text-transform: uppercase;
 }
+
+.tabela-sessoes {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #808080;
+}
+
+thead {
+    background-color: #6a1b9a;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+main section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    padding: 20px 28px 24px 16px;
+}
+
+.filme {
+    border: 1px solid #b9b9b9;
+    border-radius: 6px;
+    padding: 16px 20px;
+}
+
+.filme img {
+    max-width: 100%;
+}
+
+.destaque {
+    background-color: #f3e5f5;
+    border: 1px solid #6a1b9a;
+}
