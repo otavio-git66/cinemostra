@@ -1,1 +1,61 @@
-/* reset para salvar */
+main a:link {
+    color: #6a1b9a;
+    text-decoration: none;
+}
+
+main a:visited {
+    color: #8e44ad;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main a:active {
+    color: #4a148c;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-horizontal {
+    list-style: none;
+}
+
+.menu-horizontal li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.menu-horizontal a {
+    color: white;
+}
+
+.menu-horizontal a.ativo {
+    border-bottom: 3px solid white;
+}
+
+.menu-vertical {
+    list-style: none;
+}
+
+.menu-vertical li {
+    border-bottom: 1px solid #D3D3D3
+}
+
+.menu-vertical a {
+    display: block;
+    padding: 10px 12px;
+}
+
+.passos {
+    list-style-type: decimal-leading-zero;
+    margin-left: 16px;
+}
+
+.lateral > h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
