@@ -110,7 +110,63 @@
                 <li>Informe seus dados</li>
                 <li>Confirme a reserva</li>
             </ol>
-            <!-- Checkpoint 3: o formulário entra aqui -->
+            <form id="formReserva" class="formulario" method="POST">
+
+                <h3>Dados do espectador</h3>
+                <div class="grupo">
+                    <label for="Nome Completo" class="obrigatorio">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required minlength="3">
+                    <br>
+                    <label for="email" class="obrigatorio">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="telefone" class="obrigatorio">Telefone</label>  
+                    <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\) \d{5}-\d{4}" title="Use o formato (16) 99999-9999">
+                    <br>
+                    <label for="nascimento" class="obrigatorio">Data de Nascimento</label>
+                    <input type="date" id="nascimento" name="nascimento" max="AAAA-MM-DD">
+                    <br>
+                </div>
+
+                <h3>Sessão</h3>
+                <div class="grupo">
+                    <label for="filme" class="obrigatorio">Filme</label>
+                    <select id="filme" name="filme" required>
+                        <option value="" disabled selected>Escolha um filme</option>
+                        <option value="O Trem das Seis e Meia">O Trem das Seis e Meia</option>
+                        <option value="Cinco Dias de Sol">Cinco Dias de Sol</option>
+                        <option value="Vozes do Rio Pardo">Vozes do Rio Pardo</option>
+                        <option value="A Casa da Maré">A Casa da Maré</option>
+                        <option value="Pequeno Astro">Pequeno Astro</option>
+                        <option value="Quarta-feira Sem Fim">Quarta-feira Sem Fim</option>
+                    </select>
+                    <label for="dia" class="obrigatorio">Dia da sessão</label>
+                    <input type="date" id="dia" name="dia" min="2026-11-07" max="2026-11-13" required>
+                    <br>
+                    <label for="ingressos" class="obrigatorio">Ingressos</label>
+                    <input type="number" id="ingressos" name="ingressos" min="1" max="6" step="1" value="1" required>
+               
+                    <div class="opcao">
+                    <span>Horário</span>
+                    <div class="opcoes">
+                        <input type="radio" id="horario14" name="horario" value="14h" checked>
+                        <label for="horario14">14h</label>
+
+                        <input type="radio" id="horario17" name="horario" value="17h">
+                        <label for="horario17">17h</label>
+
+                        <input type="radio" id="horario20" name="horario" value="20h">
+                        <label for="horario20">20h</label>
+                    </div>
+                </div>
+                    
+                </div>
+
+                <div class="acoes">
+                   <button type="reset" class="botao botao-secundario">Limpar</button>
+                   <button type="button" class="botao botao-secundario">Cancelar</button>
+                   <button type="submit" class="botao botao-principal">Reservar</button>
+                </div>
         </section>
 
         <section id="local">
@@ -127,6 +183,11 @@
         Telefone: <a href="tel:+551630000000">(16) 3000-0000</a>
     </address>
     </footer>
-
+<script>
+    document.getElementById('formReserva').addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('Reserva enviada');
+    });
+</script>
 </body>
 </html>
