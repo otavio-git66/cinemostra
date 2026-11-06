@@ -1,1 +1,14 @@
-/* reset para salvar */
+
+.topo {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 1.5rem;
+}
+
+
+.rodape {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}

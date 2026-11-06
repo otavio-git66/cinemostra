@@ -1,1 +1,46 @@
-/* reset para salvar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.introducao {
+    max-width: 700px;
+}
+
+.genero {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.sinopse {
+    font-size: 0.95em;
+}
+
+.preco {
+    font-weight: bold;
+    color: #6a1b9a;
+}
