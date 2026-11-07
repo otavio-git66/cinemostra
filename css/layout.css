@@ -105,3 +105,44 @@ body {
             "rodape";
     }
 }
+
+.grade-filmes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.destaque {
+    grid-column: 1 / -1;
+}
+
+.classificacao {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #6a1b9a;
+    color: white;
+
+    display: grid;
+    place-items: center;
+}
+
+.grupo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 24px;
+}
+
+.campo-largo {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 700px) {
+    .grupo {
+        grid-template-columns: 1fr;
+    }
+
+    .topo {
+        flex-direction: column;
+    }
+}
