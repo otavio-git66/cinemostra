@@ -59,3 +59,49 @@
     justify-content: flex-end;
     gap: 12px;
 }
+
+body {
+    display: grid;
+    min-height: 100vh;
+
+    grid-template-columns: 1fr 260px;
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+        "topo topo"
+        "conteudo lateral"
+        "rodape rodape";
+
+    column-gap: 24px;
+}
+
+.topo {
+    grid-area: topo;
+}
+
+.conteudo {
+    grid-area: conteudo;
+    padding: 20px;
+}
+
+.lateral {
+    grid-area: lateral;
+    padding: 20px;
+}
+
+.rodape {
+    grid-area: rodape;
+}
+
+@media (max-width: 700px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+
+        grid-template-areas:
+            "topo"
+            "conteudo"
+            "lateral"
+            "rodape";
+    }
+}
